@@ -1,10 +1,40 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import "./index.css";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { ChakraProvider } from "@chakra-ui/react";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
+import Layout from "./components/LayOut.jsx";
+import Home from "./pages/Home.jsx";
+import MyWork from "./pages/MyWork.jsx";
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Navigate replace to="/home" />,
+      },
+      {
+        path: "/home",
+        element: <Home />,
+      },
+      {
+        path: "/my_work",
+        element: <MyWork />,
+      }
+    ],
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <ChakraProvider>
+      <RouterProvider router={router} />
+    </ChakraProvider>
+  </React.StrictMode>
+);

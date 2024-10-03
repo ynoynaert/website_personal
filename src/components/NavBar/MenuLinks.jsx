@@ -14,8 +14,8 @@ export default function MenuLinks({ isOpen }) {
         direction={["column", "column", "row", "row"]}
         pt={[4, 4, 0, 0]}
       >
-        <MenuItem to="#">home</MenuItem>
-        <MenuItem to="#">selected work</MenuItem>
+        <MenuItem to="/home">home</MenuItem>
+        <MenuItem to="/my_work">selected work</MenuItem>
         <MenuItem to="#">resume</MenuItem>
         <MenuItem to="#">get in touch</MenuItem>
       </Stack>
