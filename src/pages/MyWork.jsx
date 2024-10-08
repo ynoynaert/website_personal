@@ -43,7 +43,6 @@ export default function MyWork() {
             </Stack>
           </Flex>
 
-          {/* Setting maxWidth for the Stack in CardBody */}
           <Stack maxWidth="400px" width="100%">
             <CardBody>
               <Heading size="md">{w.title}</Heading>
@@ -54,7 +53,7 @@ export default function MyWork() {
               <Text>{w.technologies}</Text>
             </CardBody>
             <CardFooter>
-              {w.buttonTwo ? ( // Check if buttonTwo property exists
+              {w.buttonTwo ? (
                 <>
                   <Button
                     as="a"
@@ -63,19 +62,19 @@ export default function MyWork() {
                     rel="noopener noreferrer"
                     background="#F07167"
                     color="white"
-                    mr={2} // margin right for spacing
+                    mr={2}
                   >
                     {w.but}
                   </Button>
                   <Button
                     as="a"
-                    href={w.buttonTwo.link} // Use the link from buttonTwo
+                    href={w.buttonTwo.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     background="#F07167"
                     color="white"
                   >
-                    {w.buttonTwo.text} {/* Text for the second button */}
+                    {w.buttonTwo.text}
                   </Button>
                 </>
               ) : (
@@ -107,6 +106,7 @@ const work = [
     imageurl: "/myWork/fanclub.png",
     but: "Visit website",
     link: "https://fanclub-lindemans-aalst.onrender.com",
+    period: "September 2024"
     },
   {
     title: "Delaware B2B Portal",
