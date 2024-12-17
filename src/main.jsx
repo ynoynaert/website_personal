@@ -7,7 +7,7 @@ import {
   Navigate,
   RouterProvider,
 } from "react-router-dom";
-import Layout from "./components/LayOut.jsx";
+import Layout from "./components/Layout.jsx";
 import Home from "./pages/Home.jsx";
 import MyWork from "./pages/MyWork.jsx";
 
