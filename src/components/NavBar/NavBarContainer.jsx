@@ -7,12 +7,13 @@ const NavBarContainer = ({ children, ...props }) => {
       align="center"
       justify="space-between"
       wrap="wrap"
-      w="100vw" // Full width
-      p={4} // Adjust padding if needed
+      w="100vw"
+      p={4}
       bg="#fffcf5"
       position="fixed"
       top="0"
       left="0"
+      zIndex="10"
       {...props}
     >
       {children}

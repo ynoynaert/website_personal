@@ -16,8 +16,8 @@ export default function MenuLinks({ isOpen }) {
       >
         <MenuItem to="/home">home</MenuItem>
         <MenuItem to="/my_work">selected work</MenuItem>
-        <MenuItem to="#">resume</MenuItem>
-        <MenuItem to="#">get in touch</MenuItem>
+        <MenuItem to="/">resume</MenuItem>
+        <MenuItem to="/">get in touch</MenuItem>
       </Stack>
     </Box>
   );

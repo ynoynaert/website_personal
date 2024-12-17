@@ -11,10 +11,11 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import React from "react";
+import "../index.css";
 
 export default function MyWork() {
   return (
-    <Box p={10} mx="auto" width={["100%", "90%", "80%", "60%"]}>
+    <Box  mt="80px" p={10} mx="auto" width={["100%", "90%", "80%", "60%"]} bg="#fffcf5">
       {work.map((w, index) => (
         <Card
           key={index}
@@ -99,6 +100,20 @@ export default function MyWork() {
 
 const work = [
   {
+    title: "DevOps Dozer Project",
+    description:
+      "The DevOps Dozer Project focuses on developing an integrated digital platform consisting of a website and a mobile app. The project is run by a team of six developers and four operations specialists, who work together to build a user-friendly and scalable solution. The website, developed in C#, offers extensive functionality such as managing machines, quotes, orders, branches, translations, categories and options, types and vendors. In addition, there is a login system that gives admins and vendors specific access rights. The mobile app, developed in Kotlin, offers a simplified interface that allows users to view machines, quotes and orders. In addition, quotes can be created directly through the app.",
+    technologies: ".NET, Azure Blob Storage, Auth0, Jira, Kotlin, Blazorise",
+    imageurl: "/myWork/devopsdozer.png",
+    but: "Website repository",
+    link: "https://github.com/ynoynaert/2425-rise-dotnet",
+    period: "October - December 2024",
+    buttonTwo: {
+      text: "Android app repository",
+      link: "https://github.com/ynoynaert/2425-rise-android",
+    },
+  },
+  {
     title: "Website Fanclub Lindemans Aalst",
     description:
       "As a dedicated fan of the volleyball club, I gave the fan club's website a fresh, modern redesign. Using React and Chakra UI, I not only updated the look and feel but also made it more user-friendly and responsive. The improved navigation and design now better reflect the energy of the club and its supporters.",
@@ -106,8 +121,8 @@ const work = [
     imageurl: "/myWork/fanclub.png",
     but: "Visit website",
     link: "https://fanclub-lindemans-aalst.onrender.com",
-    period: "September 2024"
-    },
+    period: "September 2024",
+  },
   {
     title: "Delaware B2B Portal",
     description:
