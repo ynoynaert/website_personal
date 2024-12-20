@@ -104,7 +104,7 @@ const work = [
     description:
       "The DevOps Dozer Project focuses on developing an integrated digital platform consisting of a website and a mobile app. The project is run by a team of six developers and four operations specialists, who work together to build a user-friendly and scalable solution. The website, developed in C#, offers extensive functionality such as managing machines, quotes, orders, branches, translations, categories and options, types and vendors. In addition, there is a login system that gives admins and vendors specific access rights. The mobile app, developed in Kotlin, offers a simplified interface that allows users to view machines, quotes and orders. In addition, quotes can be created directly through the app.",
     technologies: ".NET, Azure Blob Storage, Auth0, Jira, Kotlin, Blazorise",
-    imageurl: "/myWork/devopsdozer.png",
+    imageurl: "/myWork/dozer.png",
     but: "Website repository",
     link: "https://github.com/ynoynaert/2425-rise-dotnet",
     period: "October - December 2024",
@@ -163,7 +163,7 @@ const work = [
     description:
       "As a team of five students, we developed a version of the game Splendor for our school project. During the development process, we collaborated to design and implement various aspects of the game, such as the user interface, game mechanics, and scoring system.",
     technologies: "Java, JavaFX, Scene Builder, CSS, MySQL",
-    imageurl: "/myWork/splendor.jpg",
+    imageurl: "/myWork/splendor.png",
     but: "Repository",
     link: "https://github.com/ynoynaert/2223-sdp1",
     period: "February - May 2023",
