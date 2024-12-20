@@ -11,11 +11,10 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import React from "react";
-import "../index.css";
 
 export default function MyWork() {
   return (
-    <Box  mt="80px" p={10} mx="auto" width={["100%", "90%", "80%", "60%"]} bg="#fffcf5">
+    <Box  mt="80px" p={10} mx="auto" width={["100%", "90%", "80%", "60%"]}>
       {work.map((w, index) => (
         <Card
           key={index}

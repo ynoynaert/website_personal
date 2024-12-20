@@ -20,7 +20,6 @@ export default function Home() {
       p={10}
       mx="auto"
       width={["100%", "90%", "80%", "60%"]}
-      bg="#fffcf5"
     >
       <Card
         direction={{ base: "column", sm: "row" }}

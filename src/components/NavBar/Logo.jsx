@@ -4,7 +4,7 @@ import { Image, Text, Flex, Center } from "@chakra-ui/react";
 export default function Logo() {
   return (
     <Flex>
-      <Image src="/logo_letters_name.png" alt="Logo" boxSize="75px" />
+      <Image src="/logo.png" alt="Logo" boxSize="75px" />
       <Center>
         <Text>Youna Noynaert</Text>
       </Center>
