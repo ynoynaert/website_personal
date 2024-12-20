@@ -119,7 +119,7 @@ const work = [
     technologies: "React JS, Chakra UI, JavaScript",
     imageurl: "/myWork/fanclub.png",
     but: "Visit website",
-    link: "https://fanclub-lindemans-aalst.onrender.com",
+    link: "http://www.fanclubaalst.be",
     period: "September 2024",
   },
   {
