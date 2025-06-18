@@ -49,8 +49,12 @@ export default function MyWork() {
               <Text mt={2} mb={2}>
                 {w.description}
               </Text>
-              <Text as="b">Used technologies</Text>
-              <Text>{w.technologies}</Text>
+              {w.technologies && (
+                <>
+                  <Text as="b">Used technologies</Text>
+                  <Text>{w.technologies}</Text>
+                </>
+              )}
             </CardBody>
             <CardFooter>
               {w.buttonTwo ? (
@@ -98,6 +102,15 @@ export default function MyWork() {
 }
 
 const work = [
+  {
+    title: "Bachelor thesis: 'The impact of automated player and match statistics at volleyball club Lindemans Aalst'",
+    description:
+      "For my bachelor thesis, I conducted a research project at the volleyball club Lindemans Aalst. The focus of the research was to investigate the impact of automated player and match statistics on the performance of the team. The project involved analyzing data collected from matches and training sessions, and evaluating how this information could be used to improve player performance and team strategy. The results of the research provided valuable insights into the benefits of using data analytics in sports, and highlighted the potential for further development in this area.",
+      imageurl: "/myWork/bap.jpg",
+      period: "February - May 2025",
+      but: "Read thesis",
+      link: "/myWork/NoynaertYounaBP.pdf",
+  },
   {
     title: "DevOps Dozer Project",
     description:
